@@ -225,8 +225,8 @@
     </nav>
 
     <div class="page-header">
-        <h1>Our Classes</h1>
-        <p>Find the perfect class for your fitness journey</p>
+        <h1>Meditation Classes</h1>
+        <p>Find inner peace and mental clarity</p>
     </div>
 
     <div class="container">
@@ -237,63 +237,43 @@
         <p>&copy; 2024 Divya BodySculpt YoGa Studio. All rights reserved.</p>
     </footer>
 
-    <a href="https://wa.me/0431955787?text=Hi! I want to know more about your classes" class="floating-whatsapp" target="_blank">
+    <a href="https://wa.me/0431955787?text=Hi! I want to know more about Meditation Classes" class="floating-whatsapp" target="_blank">
         <i class="fab fa-whatsapp"></i>
     </a>
 
     <script>
         const classes = [
             {
-                id: '1',
-                name: 'Morning Yoga',
+                name: 'Morning Meditation',
                 instructor: 'Divya',
-                date: '2024-02-20',
-                startTime: '07:00',
-                endTime: '08:00',
+                date: 'Mon-Sat',
+                time: '07:00 - 08:00',
                 capacity: 15,
-                registeredUsers: 8,
-                category: 'yoga',
-                difficulty: 'beginner',
+                icon: 'fas fa-om'
+            },
+            {
+                name: 'Evening Meditation',
+                instructor: 'Divya',
+                date: 'Mon-Sat',
+                time: '18:00 - 19:00',
+                capacity: 15,
+                icon: 'fas fa-spa'
+            },
+            {
+                name: 'Mindfulness Session',
+                instructor: 'Divya',
+                date: 'Wed & Fri',
+                time: '10:00 - 11:00',
+                capacity: 12,
                 icon: 'fas fa-leaf'
             },
             {
-                id: '2',
-                name: 'HIIT Training',
+                name: 'Guided Relaxation',
                 instructor: 'Divya',
-                date: '2024-02-20',
-                startTime: '18:00',
-                endTime: '19:00',
-                capacity: 20,
-                registeredUsers: 15,
-                category: 'cardio',
-                difficulty: 'intermediate',
-                icon: 'fas fa-fire'
-            },
-            {
-                id: '3',
-                name: 'Strength Training',
-                instructor: 'Divya',
-                date: '2024-02-21',
-                startTime: '19:00',
-                endTime: '20:30',
-                capacity: 12,
-                registeredUsers: 5,
-                category: 'strength',
-                difficulty: 'advanced',
-                icon: 'fas fa-dumbbell'
-            },
-            {
-                id: '4',
-                name: 'Pilates Flow',
-                instructor: 'Divya',
-                date: '2024-02-22',
-                startTime: '10:00',
-                endTime: '11:00',
-                capacity: 18,
-                registeredUsers: 12,
-                category: 'pilates',
-                difficulty: 'beginner',
-                icon: 'fas fa-spa'
+                date: 'Tue & Thu',
+                time: '19:00 - 20:00',
+                capacity: 15,
+                icon: 'fas fa-moon'
             }
         ];
 
@@ -313,19 +293,19 @@
                     </div>
                     <div class="class-info">
                         <i class="fas fa-clock"></i>
-                        <span>${cls.startTime} - ${cls.endTime}</span>
+                        <span>${cls.time}</span>
                     </div>
                     <div class="class-info">
                         <i class="fas fa-users"></i>
-                        <span>${cls.capacity - cls.registeredUsers}/${cls.capacity} spots available</span>
+                        <span>Max ${cls.capacity} participants</span>
                     </div>
-                    <span class="difficulty ${cls.difficulty}">${cls.difficulty}</span>
+                    <span class="difficulty beginner">All Levels</span>
                     <div class="btn-group">
-                        <a href="https://wa.me/0431955787?text=Hi! I'm interested in ${cls.name} on ${cls.date} at ${cls.startTime}" class="btn btn-whatsapp" target="_blank">
+                        <a href="https://wa.me/0431955787?text=Hi! I'm interested in ${cls.name} (${cls.date} at ${cls.time})" class="btn btn-whatsapp" target="_blank">
                             <i class="fab fa-whatsapp"></i>
                             WhatsApp
                         </a>
-                        <a href="#" class="btn btn-register">
+                        <a href="https://forms.gle/Mc75XKWgKcchTasj9" class="btn btn-register" target="_blank">
                             <i class="fas fa-user-plus"></i>
                             Book Now
                         </a>
